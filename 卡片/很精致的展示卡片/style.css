@@ -1,0 +1,47 @@
+body{
+    background-color: #fff;
+    margin: 0;
+    font-family: Poppins;
+}
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+    width: 200px;
+    margin: 2rem;
+    transform-style: preserve-3d;
+    transform: perspective(100rem);
+    cursor: pointer;
+}
+.item {
+    --rX: 0deg;
+    --rY: 0deg;
+    --scale: 1;
+    --cX: 10px;
+    --cY: 10px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    transform: rotateX(var(--rX)) rotateY(var(--rY)) scale(var(--scale));
+    padding: 20px;
+    box-shadow: var(--cX)  var(--cY) 20px #5555;
+    transition: 0.1s;
+}
+.item img{
+    --rX: 0deg;
+    --rY: 0deg;
+    --offsetX: 0px;
+    --offsetY: 0px;
+    --cX: 0px;
+    --cY: 0px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transform: translate(var(--offsetX), var(--offsetY)) ;
+    box-shadow: var(--cX)  var(--cY) 20px #aaaa;
+    transition: 0.1s;
+}
