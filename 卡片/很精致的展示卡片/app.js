@@ -15,8 +15,8 @@ items.forEach(item => {
       let img = item.querySelector('img');
       img.style.setProperty('--offsetX', (positionX-50)/2+"px");
       img.style.setProperty('--offsetY', (positionY - 50)/2  + "px");
-      img.style.setProperty('--cX', -(positionX-50)/5+"px");
-      img.style.setProperty('--cY', -(positionY-50)/5+"px");
+      img.style.setProperty('--cX', -(positionX-50)/2+"px");
+      img.style.setProperty('--cY', -(positionY-50)/2+"px");
   });
 
   item.addEventListener('mouseout', ()=>{

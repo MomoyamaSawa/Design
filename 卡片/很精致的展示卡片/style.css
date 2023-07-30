@@ -27,7 +27,7 @@ body{
     border-radius: 20px;
     transform: rotateX(var(--rX)) rotateY(var(--rY)) scale(var(--scale));
     padding: 20px;
-    box-shadow: var(--cX)  var(--cY) 20px #5555;
+    box-shadow: var(--cX)  var(--cY) 20px #5558;
     transition: 0.1s;
 }
 .item img{
@@ -42,6 +42,6 @@ body{
     object-fit: cover;
     border-radius: 20px;
     transform: translate(var(--offsetX), var(--offsetY)) ;
-    box-shadow: var(--cX)  var(--cY) 20px #aaaa;
+    box-shadow: var(--cX)  var(--cY) 20px #7778;
     transition: 0.1s;
 }
